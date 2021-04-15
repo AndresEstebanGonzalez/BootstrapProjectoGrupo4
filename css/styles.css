@@ -1,4 +1,178 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+@media screen and (min-width: 768px) {
+  /*Third Sector*/
+  .third-sector-top {
+    width: 100vw;
+    height: 100vh;
+  }
+  .third-sector-top .top-sector {
+    width: 100%;
+    height: 90%;
+  }
+  .third-sector-top .top-sector .top-sector-img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .third-sector-middle .middle-sector {
+    width: 100%;
+    height: 90%;
+  }
+  .third-sector-middle .middle-sector .top-sector-img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .first-sector {
+    width: 100vw;
+    height: 100vh;
+  }
+  .first-sector .first-sector-img {
+    background-size: cover;
+    background-position: center;
+  }
+  .first-sector .first-sector-btn {
+    padding: 0.5rem 5rem 0.5rem 5rem;
+    margin-top: 30%;
+    font-size: 32px;
+    position: absolute;
+    background-color: #000 !important;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .first-sector {
+    width: 100vw;
+    height: 100vh;
+  }
+  .first-sector .first-sector-img {
+    background-size: cover;
+    background-position: center;
+  }
+  .first-sector .first-sector-btn {
+    margin-top: 99%;
+    position: absolute;
+    background-color: #000 !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .first-sector .first-sector-btn {
+    width: 60% !important;
+    height: 10% !important;
+    padding: 1%;
+    position: absolute;
+    margin-top: 70%;
+  }
+  /*Seventh Sector*/
+  .seventh-sector .comprar-btn {
+    width: 20rem;
+    height: 3rem !important;
+    margin-top: 30% !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /*Fourth Sector*/
+  .fourth-sector {
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+  }
+  .fourth-sector .row-top {
+    width: 100%;
+    height: 25%;
+  }
+  .fourth-sector .row-top .fourth-sector-top-left {
+    width: 100%;
+    height: 50% !important;
+  }
+  .fourth-sector .row-top .fourth-sector-top-left .fourth-sector-img-one {
+    width: 100%;
+    height: 100% !important;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .fourth-sector .row-bottom {
+    width: 100%;
+    height: 25%;
+  }
+  .fourth-sector .row-bottom .fourth-sector-bottom-right {
+    width: 100%;
+    height: 50% !important;
+  }
+  .fourth-sector .row-bottom .fourth-sector-bottom-right .fourth-sector-img-two {
+    width: 100%;
+    height: 100% !important;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  /*Seventh Sector*/
+  .seventh-sector {
+    width: 100vw;
+    height: 40vh;
+  }
+  .seventh-sector .seventh-background-grad-top {
+    width: 100%;
+    height: 50%;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#000), color-stop(95%, #68606c));
+    background-image: linear-gradient(360deg, #000, #68606c 95%);
+    position: absolute;
+  }
+  .seventh-sector .seventh-background-grad-top .seventh-sale-btn {
+    width: 100%;
+    height: 70%;
+  }
+  .seventh-sector .seventh-background-grad-top .seventh-sale-btn .preventa-btn {
+    border-radius: 100px;
+    position: absolute;
+    background-color: #000 !important;
+  }
+  .seventh-sector .seventh-background-grad-top .seventh-sale-btn .comprar-btn {
+    width: 20rem;
+    height: 3rem;
+    margin-top: 20% !important;
+    font-weight: 600;
+    border-radius: 100px;
+    position: absolute;
+    background-color: #fff !important;
+  }
+}
+
+.gradient-div-blacktowhite09 {
+  width: 100%;
+  height: 30vh;
+  opacity: 0.9;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#fff), to(#020202d2));
+  background-image: linear-gradient(360deg, #fff, #020202d2);
+}
+
+.gradient-div-whitetoblack {
+  width: 100%;
+  height: 40vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), color-stop(80%, #000));
+  background-image: linear-gradient(180deg, #fff, #000 80%);
+}
+
+.gradient-div-blacktoblue {
+  width: 100vw;
+  height: 30vh;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#3c7aac), color-stop(85%, #000));
+  background-image: linear-gradient(360deg, #3c7aac, #000 85%);
+}
+
+.gradient-div-graytoblue {
+  width: 100vw;
+  height: 30vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(15%, #474a53), to(#8793ac));
+  background-image: linear-gradient(180deg, #474a53 15%, #8793ac);
+}
+
 html,
 body {
   margin: 0;
@@ -39,28 +213,27 @@ body {
   opacity: 0.9;
 }
 
+.first-sector .first-sector-btn a {
+  color: #fff;
+  text-decoration: none;
+}
+
 /*Second Sector*/
 .second-sector {
   width: 100vw;
   height: 100vh;
 }
 
-.second-sector .carousel-slide {
+.second-sector .carousel-slide,
+.second-sector .carousel-inner,
+.second-sector .carousel-item {
   width: 100%;
   height: 100%;
 }
 
-.second-sector .carousel-slide .carousel-inner {
-  width: 100%;
-  height: 100%;
-}
-
-.second-sector .carousel-slide .carousel-inner .carousel-item {
-  width: 100%;
-  height: 100%;
-}
-
-.second-sector .carousel-slide .carousel-inner .carousel-item .carousel-img {
+.second-sector .carousel-slide .carousel-img,
+.second-sector .carousel-inner .carousel-img,
+.second-sector .carousel-item .carousel-img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -68,14 +241,6 @@ body {
 }
 
 /*Gradient Div*/
-.gradient-div-blacktowhite09 {
-  width: 100%;
-  height: 30vh;
-  opacity: 0.9;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#fff), to(#020202d2));
-  background-image: linear-gradient(360deg, #fff, #020202d2);
-}
-
 /*Third Sector*/
 .third-sector-top {
   width: 100vw;
@@ -132,13 +297,6 @@ body {
 }
 
 /*Gradient Div*/
-.gradient-div-whitetoblack {
-  width: 100%;
-  height: 40vh;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), color-stop(80%, #000));
-  background-image: linear-gradient(180deg, #fff, #000 80%);
-}
-
 /*Fourth Sector*/
 .fourth-sector {
   width: 100vw;
@@ -181,13 +339,6 @@ body {
 }
 
 /*Gradient Div*/
-.gradient-div-blacktoblue {
-  width: 100vw;
-  height: 30vh;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#3c7aac), color-stop(85%, #000));
-  background-image: linear-gradient(360deg, #3c7aac, #000 85%);
-}
-
 /*Fifth Sector*/
 .fifth-sector {
   width: 100vw;
@@ -223,13 +374,6 @@ body {
 }
 
 /*Gradient Div*/
-.gradient-div-graytoblue {
-  width: 100vw;
-  height: 30vh;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(15%, #474a53), to(#8793ac));
-  background-image: linear-gradient(180deg, #474a53 15%, #8793ac);
-}
-
 /*Sixth Sector*/
 .sixth-sector {
   width: 100vw;
@@ -305,179 +449,8 @@ body {
   background-color: #fff !important;
 }
 
-@media screen and (max-width: 576px) {
-  .first-sector {
-    width: 100vw;
-    height: 100vh;
-  }
-  .first-sector .first-sector-img {
-    background-size: cover;
-    background-position: center;
-  }
-  .first-sector .first-sector-btn {
-    margin-top: 70%;
-    position: absolute;
-    background-color: #000 !important;
-  }
-  /*Seventh Sector*/
-  .seventh-sector {
-    width: 100vw;
-    height: 40vh;
-  }
-  .seventh-sector .seventh-background-grad-top {
-    width: 100%;
-    height: 50%;
-    background-image: -webkit-gradient(linear, left bottom, left top, from(#000), color-stop(95%, #68606c));
-    background-image: linear-gradient(360deg, #000, #68606c 95%);
-    position: absolute;
-  }
-  .seventh-sector .seventh-background-grad-top .seventh-sale-btn {
-    width: 100%;
-    height: 70%;
-  }
-  .seventh-sector .seventh-background-grad-top .seventh-sale-btn .preventa-btn {
-    border-radius: 100px;
-    position: absolute;
-    background-color: #000 !important;
-  }
-  .seventh-sector .seventh-background-grad-top .seventh-sale-btn .comprar-btn {
-    width: 20rem;
-    height: 3rem;
-    margin-top: 80% !important;
-    font-weight: 600;
-    border-radius: 100px;
-    position: absolute;
-    background-color: #fff !important;
-  }
-}
-
-@media screen and (max-width: 375px) {
-  .first-sector {
-    width: 100vw;
-    height: 100vh;
-  }
-  .first-sector .first-sector-img {
-    background-size: cover;
-    background-position: center;
-  }
-  .first-sector .first-sector-btn {
-    margin-top: 99%;
-    position: absolute;
-    background-color: #000 !important;
-  }
-}
-
-@media screen and (min-width: 2560px) {
-  .first-sector {
-    width: 100vw;
-    height: 100vh;
-  }
-  .first-sector .first-sector-img {
-    background-size: cover;
-    background-position: center;
-  }
-  .first-sector .first-sector-btn {
-    padding: 0.5rem 5rem 0.5rem 5rem;
-    margin-top: 30%;
-    font-size: 32px;
-    position: absolute;
-    background-color: #000 !important;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  /*Third Sector*/
-  .third-sector-top {
-    width: 100vw;
-    height: 100vh;
-  }
-  .third-sector-top .top-sector {
-    width: 100%;
-    height: 90%;
-  }
-  .third-sector-top .top-sector .top-sector-img {
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  .third-sector-middle .middle-sector {
-    width: 100%;
-    height: 90%;
-  }
-  .third-sector-middle .middle-sector .top-sector-img {
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  /*Fourth Sector*/
-  .fourth-sector {
-    width: 100vw;
-    height: 100vh;
-    background-color: #000;
-  }
-  .fourth-sector .row-top {
-    width: 100%;
-    height: 25%;
-  }
-  .fourth-sector .row-top .fourth-sector-top-left {
-    width: 100%;
-    height: 100%;
-  }
-  .fourth-sector .row-top .fourth-sector-top-left .fourth-sector-img-one {
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  .fourth-sector .row-bottom {
-    width: 100%;
-    height: 25%;
-    margin-top: 25% !important;
-  }
-  .fourth-sector .row-bottom .fourth-sector-bottom-right {
-    width: 100%;
-    height: 100%;
-  }
-  .fourth-sector .row-bottom .fourth-sector-bottom-right .fourth-sector-img-two {
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  /*Seventh Sector*/
-  .seventh-sector {
-    width: 100vw;
-    height: 40vh;
-  }
-  .seventh-sector .seventh-background-grad-top {
-    width: 100%;
-    height: 50%;
-    background-image: -webkit-gradient(linear, left bottom, left top, from(#000), color-stop(95%, #68606c));
-    background-image: linear-gradient(360deg, #000, #68606c 95%);
-    position: absolute;
-  }
-  .seventh-sector .seventh-background-grad-top .seventh-sale-btn {
-    width: 100%;
-    height: 70%;
-  }
-  .seventh-sector .seventh-background-grad-top .seventh-sale-btn .preventa-btn {
-    border-radius: 100px;
-    position: absolute;
-    background-color: #000 !important;
-  }
-  .seventh-sector .seventh-background-grad-top .seventh-sale-btn .comprar-btn {
-    width: 20rem;
-    height: 3rem;
-    margin-top: 20% !important;
-    font-weight: 600;
-    border-radius: 100px;
-    position: absolute;
-    background-color: #fff !important;
-  }
+.seventh-sector .seventh-background-grad-top .seventh-sale-btn .comprar-btn a {
+  color: #000;
+  text-decoration: none;
 }
 /*# sourceMappingURL=styles.css.map */
