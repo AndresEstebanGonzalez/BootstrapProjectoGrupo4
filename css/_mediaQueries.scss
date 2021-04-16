@@ -31,7 +31,7 @@
       @include imgPos;
     }
     .first-sector-btn {
-      padding: 0.5rem 5rem 0.5rem 5rem;
+      padding: 0.5rem 5rem;
       margin-top: 30%;
       font-size: 32px;
       position: absolute;
@@ -61,14 +61,6 @@
       margin-top: 70%;
     }
   }
-
-  /*Seventh Sector*/
-  .seventh-sector {
-    .comprar-btn {
-      @include dim(20rem, 3rem !important);
-      margin-top: 30% !important;
-    }
-  }
 }
 @media screen and (max-width: 767px) {
   /*Fourth Sector*/
@@ -92,32 +84,6 @@
         .fourth-sector-img-two {
           @include dim(100%, 100% !important);
           object-fit: cover;
-        }
-      }
-    }
-  }
-
-  /*Seventh Sector*/
-  .seventh-sector {
-    @include dim(100vw, 40vh);
-    .seventh-background-grad-top {
-      @include dim(100%, 50%);
-      background-image: linear-gradient(360deg, $black, $salt-box 95%);
-      position: absolute;
-      .seventh-sale-btn {
-        @include dim(100%, 70%);
-        .preventa-btn {
-          border-radius: 100px;
-          position: absolute;
-          background-color: $black !important;
-        }
-        .comprar-btn {
-          @include dim(20rem, 3rem);
-          margin-top: 20% !important;
-          font-weight: 600;
-          border-radius: 100px;
-          position: absolute;
-          background-color: $white !important;
         }
       }
     }

@@ -21,3 +21,8 @@
   @include dim(100vw, 30vh);
   background-image: linear-gradient(180deg, $mako 15%, $bali-hai);
 }
+
+%lightgraytoblue {
+  @include dim(100vw, 30vh);
+  background-image: linear-gradient(360deg, $san-juan 50%, $gray-nickel 95%);
+}
