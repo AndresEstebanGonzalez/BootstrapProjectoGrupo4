@@ -1,0 +1,265 @@
+@import "./mediaQueries";
+@import "./variables/colors";
+@import "./variables/mixins";
+@import "./variables/variables";
+@import "./variables/gradient";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-family: "Roboto" !important;
+  overflow-x: hidden;
+}
+
+/*First Sector*/
+.first-sector {
+  @include dim(100vw, 100vh);
+  .first-sector-head {
+    top: 0;
+    position: absolute;
+    color: $white;
+    opacity: 0.9;
+  }
+  .first-sector-img {
+    @include dim(100%, 100%);
+    object-fit: cover;
+  }
+  .first-sector-btn {
+    @include dim(20rem, 3rem);
+    bottom: 0;
+    font-weight: 500;
+    border: 3px solid $white !important;
+    border-radius: 100px;
+    position: absolute;
+    background-color: $black !important;
+    opacity: 0.9;
+    a {
+      color: $white;
+      text-decoration: none;
+    }
+  }
+}
+
+/*Second Sector*/
+.second-sector {
+  @include dim(100vw, 100vh);
+  .carousel-slide,
+  .carousel-inner,
+  .carousel-item {
+    @include dim(100%, 100%);
+    .carousel-img {
+      @include dim(100%, 100%);
+      object-fit: cover;
+    }
+  }
+}
+
+/*Gradient Div*/
+.gradient-div-blacktowhite09 {
+  @extend %blacktowhite09;
+}
+
+/*Third Sector*/
+.third-sector-top {
+  @include dim(100vw, 100vh);
+  .top-sector {
+    @include dim(100%, 100%);
+    .top-sector-img {
+      width: 100%;
+      height: 70% !important;
+      background-position: center;
+      object-fit: cover !important;
+    }
+    .top-sector-head {
+      h6 {
+        font-weight: 400;
+      }
+    }
+    .top-sector-p-text {
+      word-spacing: 2px;
+      font-weight: 300;
+    }
+  }
+}
+
+.third-sector-middle {
+  @include dim(100vw, 100vh);
+  .middle-sector {
+    width: 100%;
+    height: 70% !important;
+    img {
+      width: 100%;
+      height: 70% !important;
+      background-position: center;
+      object-fit: cover !important;
+    }
+    .middle-sector-head {
+      h6 {
+        font-weight: 400;
+      }
+    }
+    .middle-sector-p-text {
+      word-spacing: 2px;
+      font-weight: 300;
+    }
+  }
+}
+
+/*Gradient Div*/
+.gradient-div-whitetoblack {
+  @extend %whitetoblack;
+}
+
+/*Fourth Sector*/
+.fourth-sector {
+  @include dim(100vw, 100vh);
+  background-color: $black;
+  .row-top {
+    @include dim(100%, 50%);
+    .fourth-sector-top-left {
+      @include dim(100%, 100%);
+      .fourth-sector-img-one {
+        @include dim(100%, 100%);
+        object-fit: cover;
+      }
+    }
+  }
+  .row-bottom {
+    @include dim(100%, 50%);
+    .fourth-sector-bottom-right {
+      @include dim(100%, 100%);
+      .fourth-sector-img-two {
+        @include dim(100%, 100%);
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+/*Gradient Div*/
+.gradient-div-blacktoblue {
+  @extend %blacktoblue;
+}
+
+/*Fifth Sector*/
+.fifth-sector {
+  @include dim(100vw, 100vh);
+  .background-grad-top {
+    @include dim(100%, 30%);
+    background-image: linear-gradient(360deg, transparent, $steel-blue);
+    position: absolute;
+  }
+  .fifth-sector-text {
+    position: absolute;
+  }
+  .fifth-sector-img {
+    @include dim(100%, 100%);
+    object-fit: cover;
+  }
+  .background-grad-bottom {
+    @include dim(100%, 30%);
+    opacity: 0.2;
+    background-image: linear-gradient(360deg, transparent 95%, $mako);
+    position: absolute;
+  }
+}
+
+/*Gradient Div*/
+.gradient-div-graytoblue {
+  @extend %graytoblue;
+}
+
+/*Sixth Sector*/
+.sixth-sector {
+  @include dim(100vw, 100vh);
+  .sixth-background-grad-top {
+    @include dim(100%, 30%);
+    background-image: linear-gradient(360deg, transparent, $bali-hai 70%);
+    position: absolute;
+  }
+  .sixth-sector-img-text {
+    @include dim(100%, 100%);
+    .sixth-sector-text {
+      position: absolute;
+    }
+    .sixth-sector-img {
+      @include dim(100%, 100%);
+      object-fit: cover;
+    }
+  }
+  .sixth-background-grad-bottom {
+    @include dim(100%, 30%);
+    background-image: linear-gradient(360deg, $salt-box 85%, transparent);
+    position: absolute;
+    transform: translateY(-35px);
+  }
+}
+
+/*Seventh Sector*/
+.seventh-sector {
+  @include dim(100vw, 20vh);
+  .seventh-background {
+    @include dim(100%, 100%);
+    background-image: $white;
+    position: absolute;
+    .seventh-sale-btn {
+      @include dim(100%, 70%);
+      .preventa-btn {
+        font-weight: 600;
+        border-radius: 100px;
+        background-color: $black !important;
+        animation: 100ms;
+      }
+      .preventa-btn:hover {
+        transform: scale(1.2);
+      }
+      .comprar-btn {
+        @include dim(20rem, 3rem);
+        font-weight: 600;
+        border-radius: 100px;
+        border: 4px solid $black !important;
+        background-color: $white !important;
+        animation: 100ms;
+        a {
+          color: $black;
+          text-decoration: none;
+        }
+      }
+      .comprar-btn:hover {
+        @include dim(20rem, 3rem);
+        font-weight: 600;
+        border-radius: 100px;
+        border: 4px solid $black !important;
+        background-color: $white !important;
+        transform: scale(1.2);
+        a {
+          color: $black;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+/*Model 3*/
+
+/*Fifth Sector*/
+.model-3-background-grad-bottom {
+  @include dim(100%, 30%);
+  opacity: 0.2;
+  background-image: linear-gradient(180deg, transparent 95%, $san-juan);
+  position: absolute;
+}
+/*Gradient Div*/
+.gradient-div-lightgraytoblue {
+  @extend %lightgraytoblue;
+}
+/*Sixth Sector*/
+.model-3-sixth-background-grad-top {
+  @include dim(100%, 30%);
+  background-image: linear-gradient(360deg, transparent, $san-juan);
+  position: absolute;
+}

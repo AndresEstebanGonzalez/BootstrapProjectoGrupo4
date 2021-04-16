@@ -1,0 +1,9 @@
+@mixin dim($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin imgPos {
+  background-size: cover;
+  background-position: center;
+}

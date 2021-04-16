@@ -1,0 +1,28 @@
+@import "./colors";
+@import "./mixins";
+
+%blacktowhite09 {
+  @include dim(100%, 30vh);
+  opacity: 0.9;
+  background-image: linear-gradient(360deg, $white, #020202d2);
+}
+
+%whitetoblack {
+  @include dim(100%, 40vh);
+  background-image: linear-gradient(180deg, $white, $black 80%);
+}
+
+%blacktoblue {
+  @include dim(100vw, 30vh);
+  background-image: linear-gradient(360deg, $steel-blue, $black 85%);
+}
+
+%graytoblue {
+  @include dim(100vw, 30vh);
+  background-image: linear-gradient(180deg, $mako 15%, $bali-hai);
+}
+
+%lightgraytoblue {
+  @include dim(100vw, 30vh);
+  background-image: linear-gradient(360deg, $san-juan 50%, $gray-nickel 95%);
+}
