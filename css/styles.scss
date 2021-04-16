@@ -263,3 +263,63 @@ body {
   background-image: linear-gradient(360deg, transparent, $san-juan);
   position: absolute;
 }
+
+/*Model X*/
+
+/*Third Sector*/
+.model-x-top-sector {
+  @include dim(100%, 100%);
+  .model-x-top-sector-img {
+    width: 100%;
+    height: 70% !important;
+    background-position: center;
+    object-fit: cover !important;
+  }
+  .top-sector-head {
+    h6 {
+      font-weight: 400;
+    }
+  }
+  .top-sector-p-text {
+    word-spacing: 2px;
+    font-weight: 300;
+  }
+}
+
+.model-x-middle-sector {
+  width: 100%;
+  height: 100% !important;
+  img {
+    width: 100%;
+    height: 70% !important;
+    background-position: center;
+    object-fit: cover !important;
+  }
+  .middle-sector-head {
+    h6 {
+      font-weight: 400;
+    }
+  }
+  .middle-sector-p-text {
+    word-spacing: 2px;
+    font-weight: 300;
+  }
+}
+
+/*Fifth Sector*/
+.model-x-background-grad-bottom {
+  @include dim(100%, 30%);
+  opacity: 0.1;
+  background-image: linear-gradient(180deg, transparent 95%, $periwinkle-gray);
+  position: absolute;
+}
+/*Gradient Div*/
+.gradient-div-purpletolightblue {
+  @extend %purpletolightblue;
+}
+/*Sixth Sector*/
+.model-x-sixth-background-grad-top {
+  @include dim(100%, 30%);
+  background-image: linear-gradient(360deg, transparent, $periwinkle-gray);
+  position: absolute;
+}

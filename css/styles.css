@@ -144,6 +144,13 @@
   background-image: linear-gradient(360deg, #304769 50%, #c1c1bf 95%);
 }
 
+.gradient-div-purpletolightblue {
+  width: 100vw;
+  height: 30vh;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#b5cbe2), to(#6a6068));
+  background-image: linear-gradient(360deg, #b5cbe2, #6a6068);
+}
+
 html,
 body {
   margin: 0;
@@ -467,6 +474,72 @@ body {
   height: 30%;
   background-image: -webkit-gradient(linear, left bottom, left top, from(transparent), to(#304769));
   background-image: linear-gradient(360deg, transparent, #304769);
+  position: absolute;
+}
+
+/*Model X*/
+/*Third Sector*/
+.model-x-top-sector {
+  width: 100%;
+  height: 100%;
+}
+
+.model-x-top-sector .model-x-top-sector-img {
+  width: 100%;
+  height: 70% !important;
+  background-position: center;
+  -o-object-fit: cover !important;
+     object-fit: cover !important;
+}
+
+.model-x-top-sector .top-sector-head h6 {
+  font-weight: 400;
+}
+
+.model-x-top-sector .top-sector-p-text {
+  word-spacing: 2px;
+  font-weight: 300;
+}
+
+.model-x-middle-sector {
+  width: 100%;
+  height: 100% !important;
+}
+
+.model-x-middle-sector img {
+  width: 100%;
+  height: 70% !important;
+  background-position: center;
+  -o-object-fit: cover !important;
+     object-fit: cover !important;
+}
+
+.model-x-middle-sector .middle-sector-head h6 {
+  font-weight: 400;
+}
+
+.model-x-middle-sector .middle-sector-p-text {
+  word-spacing: 2px;
+  font-weight: 300;
+}
+
+/*Fifth Sector*/
+.model-x-background-grad-bottom {
+  width: 100%;
+  height: 30%;
+  opacity: 0.1;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(95%, transparent), to(#b5cbe2));
+  background-image: linear-gradient(180deg, transparent 95%, #b5cbe2);
+  position: absolute;
+}
+
+/*Gradient Div*/
+/*Sixth Sector*/
+.model-x-sixth-background-grad-top {
+  width: 100%;
+  height: 30%;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(transparent), to(#b5cbe2));
+  background-image: linear-gradient(360deg, transparent, #b5cbe2);
   position: absolute;
 }
 /*# sourceMappingURL=styles.css.map */

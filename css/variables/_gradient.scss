@@ -26,3 +26,8 @@
   @include dim(100vw, 30vh);
   background-image: linear-gradient(360deg, $san-juan 50%, $gray-nickel 95%);
 }
+
+%purpletolightblue {
+  @include dim(100vw, 30vh);
+  background-image: linear-gradient(360deg, $periwinkle-gray, $scorpion);
+}
