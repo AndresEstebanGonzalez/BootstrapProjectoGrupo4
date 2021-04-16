@@ -16,7 +16,7 @@ body {
 
 /*First Sector*/
 .first-sector {
-  @include dim(100vw, 100vh);
+  @include dim(100vh);
   .first-sector-head {
     top: 0;
     position: absolute;
@@ -24,11 +24,12 @@ body {
     opacity: 0.9;
   }
   .first-sector-img {
-    @include dim(100%, 100%);
+    @include dim(100%);
     object-fit: cover;
   }
   .first-sector-btn {
-    @include dim(20rem, 3rem);
+    @include dim(3rem);
+    width: 20rem;
     bottom: 0;
     font-weight: 500;
     border: 3px solid $white !important;
@@ -45,13 +46,13 @@ body {
 
 /*Second Sector*/
 .second-sector {
-  @include dim(100vw, 100vh);
+  @include dim(100vh);
   .carousel-slide,
   .carousel-inner,
   .carousel-item {
-    @include dim(100%, 100%);
+    @include dim(100%);
     .carousel-img {
-      @include dim(100%, 100%);
+      @include dim(100%);
       object-fit: cover;
     }
   }
@@ -64,18 +65,17 @@ body {
 
 /*Third Sector*/
 .third-sector-top {
-  @include dim(100vw, 100vh);
+  @include dim(100vh);
   .top-sector {
-    @include dim(100%, 100%);
+    @include dim(100%);
     .top-sector-img {
-      width: 100%;
-      height: 70% !important;
+      @include dim(70% !important);
       background-position: center;
       object-fit: cover !important;
     }
     .top-sector-head {
       h6 {
-        font-weight: 400;
+        font-weight: $normal;
       }
     }
     .top-sector-p-text {
@@ -86,19 +86,17 @@ body {
 }
 
 .third-sector-middle {
-  @include dim(100vw, 100vh);
+  @include dim(100vh);
   .middle-sector {
-    width: 100%;
-    height: 70% !important;
+    @include dim(70% !important);
     img {
-      width: 100%;
-      height: 70% !important;
+      @include dim(70% !important);
       background-position: center;
       object-fit: cover !important;
     }
     .middle-sector-head {
       h6 {
-        font-weight: 400;
+        font-weight: $normal;
       }
     }
     .middle-sector-p-text {
@@ -115,24 +113,24 @@ body {
 
 /*Fourth Sector*/
 .fourth-sector {
-  @include dim(100vw, 100vh);
+  @include dim(100vh);
   background-color: $black;
   .row-top {
-    @include dim(100%, 50%);
+    @include dim(50%);
     .fourth-sector-top-left {
-      @include dim(100%, 100%);
+      @include dim(100%);
       .fourth-sector-img-one {
-        @include dim(100%, 100%);
+        @include dim(100%);
         object-fit: cover;
       }
     }
   }
   .row-bottom {
-    @include dim(100%, 50%);
+    @include dim(50%);
     .fourth-sector-bottom-right {
-      @include dim(100%, 100%);
+      @include dim(100%);
       .fourth-sector-img-two {
-        @include dim(100%, 100%);
+        @include dim(100%);
         object-fit: cover;
       }
     }
@@ -146,9 +144,9 @@ body {
 
 /*Fifth Sector*/
 .fifth-sector {
-  @include dim(100vw, 100vh);
+  @include dim(100vh);
   .background-grad-top {
-    @include dim(100%, 30%);
+    @include dim(30%);
     background-image: linear-gradient(360deg, transparent, $steel-blue);
     position: absolute;
   }
@@ -156,11 +154,11 @@ body {
     position: absolute;
   }
   .fifth-sector-img {
-    @include dim(100%, 100%);
+    @include dim(100%);
     object-fit: cover;
   }
   .background-grad-bottom {
-    @include dim(100%, 30%);
+    @include dim(30%);
     opacity: 0.2;
     background-image: linear-gradient(360deg, transparent 95%, $mako);
     position: absolute;
@@ -174,24 +172,24 @@ body {
 
 /*Sixth Sector*/
 .sixth-sector {
-  @include dim(100vw, 100vh);
+  @include dim(100vh);
   .sixth-background-grad-top {
-    @include dim(100%, 30%);
+    @include dim(30%);
     background-image: linear-gradient(360deg, transparent, $bali-hai 70%);
     position: absolute;
   }
   .sixth-sector-img-text {
-    @include dim(100%, 100%);
+    @include dim(100%);
     .sixth-sector-text {
       position: absolute;
     }
     .sixth-sector-img {
-      @include dim(100%, 100%);
+      @include dim(100%);
       object-fit: cover;
     }
   }
   .sixth-background-grad-bottom {
-    @include dim(100%, 30%);
+    @include dim(30%);
     background-image: linear-gradient(360deg, $salt-box 85%, transparent);
     position: absolute;
     transform: translateY(-35px);
@@ -200,15 +198,15 @@ body {
 
 /*Seventh Sector*/
 .seventh-sector {
-  @include dim(100vw, 20vh);
+  @include dim(20vh);
   .seventh-background {
-    @include dim(100%, 100%);
+    @include dim(100%);
     background-image: $white;
     position: absolute;
     .seventh-sale-btn {
-      @include dim(100%, 70%);
+      @include dim(70%);
       .preventa-btn {
-        font-weight: 600;
+        font-weight: $semi-bold;
         border-radius: 100px;
         background-color: $black !important;
         animation: 100ms;
@@ -217,8 +215,9 @@ body {
         transform: scale(1.2);
       }
       .comprar-btn {
-        @include dim(20rem, 3rem);
-        font-weight: 600;
+        @include dim(3rem);
+        width: 20rem;
+        font-weight: $semi-bold;
         border-radius: 100px;
         border: 4px solid $black !important;
         background-color: $white !important;
@@ -229,8 +228,9 @@ body {
         }
       }
       .comprar-btn:hover {
-        @include dim(20rem, 3rem);
-        font-weight: 600;
+        @include dim(3rem);
+        width: 20rem;
+        font-weight: $semi-bold;
         border-radius: 100px;
         border: 4px solid $black !important;
         background-color: $white !important;
@@ -248,7 +248,7 @@ body {
 
 /*Fifth Sector*/
 .model-3-background-grad-bottom {
-  @include dim(100%, 30%);
+  @include dim(30%);
   opacity: 0.2;
   background-image: linear-gradient(180deg, transparent 95%, $san-juan);
   position: absolute;
@@ -259,7 +259,7 @@ body {
 }
 /*Sixth Sector*/
 .model-3-sixth-background-grad-top {
-  @include dim(100%, 30%);
+  @include dim(30%);
   background-image: linear-gradient(360deg, transparent, $san-juan);
   position: absolute;
 }
@@ -268,7 +268,7 @@ body {
 
 /*Third Sector*/
 .model-x-top-sector {
-  @include dim(100%, 100%);
+  @include dim(100%);
   .model-x-top-sector-img {
     width: 100%;
     height: 70% !important;
@@ -277,7 +277,7 @@ body {
   }
   .top-sector-head {
     h6 {
-      font-weight: 400;
+      font-weight: $normal;
     }
   }
   .top-sector-p-text {
@@ -297,7 +297,7 @@ body {
   }
   .middle-sector-head {
     h6 {
-      font-weight: 400;
+      font-weight: $normal;
     }
   }
   .middle-sector-p-text {
@@ -308,7 +308,7 @@ body {
 
 /*Fifth Sector*/
 .model-x-background-grad-bottom {
-  @include dim(100%, 30%);
+  @include dim(30%);
   opacity: 0.1;
   background-image: linear-gradient(180deg, transparent 95%, $periwinkle-gray);
   position: absolute;
@@ -319,7 +319,7 @@ body {
 }
 /*Sixth Sector*/
 .model-x-sixth-background-grad-top {
-  @include dim(100%, 30%);
+  @include dim(30%);
   background-image: linear-gradient(360deg, transparent, $periwinkle-gray);
   position: absolute;
 }

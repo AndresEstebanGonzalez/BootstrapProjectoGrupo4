@@ -5,20 +5,20 @@
 @media screen and (min-width: 768px) {
   /*Third Sector*/
   .third-sector-top {
-    @include dim(100vw, 100vh);
+    @include dim(100vh);
     .top-sector {
-      @include dim(100%, 90%);
+      @include dim(90%);
       .top-sector-img {
-        @include dim(100%, 100%);
+        @include dim(100%);
         object-fit: cover;
       }
     }
   }
   .third-sector-middle {
     .middle-sector {
-      @include dim(100%, 90%);
+      @include dim(90%);
       .top-sector-img {
-        @include dim(100%, 100%);
+        @include dim(100%);
         object-fit: cover;
       }
     }
@@ -26,7 +26,7 @@
 }
 @media screen and (min-width: 2560px) {
   .first-sector {
-    @include dim(100vw, 100vh);
+    @include dim(100vh);
     .first-sector-img {
       @include imgPos;
     }
@@ -41,7 +41,7 @@
 }
 @media screen and (max-width: 375px) {
   .first-sector {
-    @include dim(100vw, 100vh);
+    @include dim(100vh);
     .first-sector-img {
       @include imgPos;
     }
@@ -55,7 +55,8 @@
 @media screen and (max-width: 576px) {
   .first-sector {
     .first-sector-btn {
-      @include dim(60% !important, 10% !important);
+      @include dim(10% !important);
+      width: 60% !important;
       padding: 1%;
       position: absolute;
       margin-top: 70%;
@@ -65,24 +66,24 @@
 @media screen and (max-width: 767px) {
   /*Fourth Sector*/
   .fourth-sector {
-    @include dim(100vw, 100vh);
+    @include dim(100vh);
     background-color: $black;
     .row-top {
-      @include dim(100%, 25%);
+      @include dim(25%);
       .fourth-sector-top-left {
-        @include dim(100%, 50% !important);
+        @include dim(50% !important);
         .fourth-sector-img-one {
-          @include dim(100%, 100% !important);
+          @include dim(100% !important);
           object-fit: cover;
         }
       }
     }
     .row-bottom {
-      @include dim(100%, 25%);
+      @include dim(25%);
       .fourth-sector-bottom-right {
-        @include dim(100%, 50% !important);
+        @include dim(50% !important);
         .fourth-sector-img-two {
-          @include dim(100%, 100% !important);
+          @include dim(100% !important);
           object-fit: cover;
         }
       }
